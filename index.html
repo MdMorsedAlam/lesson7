@@ -13,12 +13,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Costom Color -->
     <script>
       tailwind.config = {
@@ -28,6 +25,9 @@
               "btn-bg": "#B68C5A",
               "h-color": "#414040",
               "p-color": "#707070",
+            },
+            backgroundImage: {
+              "bg-img": "url('./images/banner.png')",
             },
           },
         },
@@ -52,34 +52,94 @@
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
                 <li class="text-base font-poppins text-p-color"><a>Home</a></li>
-              <li class="text-base font-poppins text-p-color"><a>Services <img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Cases<img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Blog <img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Contact Us<img src="./images/right.png" alt="right.png"></a></li>
+                <li class="text-base font-poppins text-p-color">
+                  <a
+                    >Services <img src="./images/right.png" alt="right.png"
+                  /></a>
+                </li>
+                <li class="text-base font-poppins text-p-color">
+                  <a>Cases<img src="./images/right.png" alt="right.png" /></a>
+                </li>
+                <li class="text-base font-poppins text-p-color">
+                  <a>Blog <img src="./images/right.png" alt="right.png" /></a>
+                </li>
+                <li class="text-base font-poppins text-p-color">
+                  <a
+                    >Contact Us<img src="./images/right.png" alt="right.png"
+                  /></a>
+                </li>
               </ul>
             </div>
-            <a class=""><img src="./images/logo2.png" alt="logo2.png"></a>
+            <a class=""><img src="./images/logo2.png" alt="logo2.png" /></a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li class="text-base font-poppins text-p-color"><a>Home</a></li>
-              <li class="text-base font-poppins text-p-color"><a>Services <img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Cases<img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Blog <img src="./images/right.png" alt="right.png"></a></li>
-              <li class="text-base font-poppins text-p-color"><a>Contact Us<img src="./images/right.png" alt="right.png"></a></li>
+              <li class="text-base font-poppins text-p-color">
+                <a>Services <img src="./images/right.png" alt="right.png" /></a>
+              </li>
+              <li class="text-base font-poppins text-p-color">
+                <a>Cases<img src="./images/right.png" alt="right.png" /></a>
+              </li>
+              <li class="text-base font-poppins text-p-color">
+                <a>Blog <img src="./images/right.png" alt="right.png" /></a>
+              </li>
+              <li class="text-base font-poppins text-p-color">
+                <a
+                  >Contact Us<img src="./images/right.png" alt="right.png"
+                /></a>
+              </li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="bg-btn-bg py-2 px-3 rounded-md cursor-pointer font-poppins font-semibold text-lg text-white">Free Consultation</a>
+            <a
+              class="bg-btn-bg py-2 px-3 rounded-md cursor-pointer font-poppins font-semibold text-lg text-white"
+              >Free Consultation</a
+            >
           </div>
         </div>
       </nav>
       <!-- Banner Section -->
-      
+      <div class="hero h-[calc(100vh-72px)] bg-bg-img">
+        <div class="hero-overlay bg-opacity-30"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-screen-md">
+            <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="mb-5 text-base font-poppins text-[#E7E7E7]">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div class="flex justify-between gap-7">
+              <input type="text" placeholder="Search your services" class="input text-[#A0A0A0] input-bordered w-full pr-16" /> 
+              <button class="text-white py-2 rounded-lg text-xl font-poppins font-semibold px-4 bg-btn-bg ">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
